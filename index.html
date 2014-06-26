@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Startup Responsive Landing page Template for startup, web services, newsletter signup, lead generation etc..">
 <title>Jub-Go</title>
- 
+ <script src="http://connect.facebook.net/en_US/all.js"></script>
 <link href="css/bootstrap.css" rel="stylesheet">
  
 <link href="css/startup.css" rel="stylesheet">
@@ -41,6 +41,30 @@ to <strong>ship</strong> your package</h1>
 </div>
 <div class="col-md-5 col-sm-4">
 <button type="submit" class="btn btn-success btn-lg">GET EARLY ACCESS</button>
+
+<div style="margin-right:-269px;margin-top:-49px;">
+<a href="#" onclick="fblogin();return false;"><img src="https://www.facebook.com/images/fb_icon_325x325.png" width="50px" height="50px"> </a></div>
+ <script>
+          //your fb login function
+          function fblogin() {
+            FB.login(function(response) {
+              //...
+            }, {scope:'read_stream,publish_stream,offline_access'});
+          }
+        </script>
+
+
+<script language="javascript" type="text/javascript">
+    FB.init({
+        appId: '884011558294621',
+        status: true,
+        cookie: true,
+        xfbml: true
+    });   
+
+
+</script>
+
 </div>
 </div>
 </form>
